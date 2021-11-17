@@ -1,0 +1,199 @@
+/* Kirwin Alcantara November 9, 2021 */
+
+html {
+	background-color: white;
+}
+/* the styles for the elements */
+* { /*reset*/
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 800px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+section {
+	width: 525px;
+	float: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #931420;
+	padding: 1.5em 2em;
+	background: linear-gradient(30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+}
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	#text-indent: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	#text-indent: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+header img {
+	float: left;
+	padding-right: 2em;
+}
+.shadow {
+	text-shadow: 1px 1px #800000;
+}
+/*Navigation Menu*/
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+}
+#nav_menu li {
+	float: left;
+	display: inline;
+}
+#nav_menu li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+/*Second Navigation Menu*/
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+	/*padding-left: 30px;
+	padding-right: 30px;*/
+}
+#quote {
+	text-align: center;
+	font-style: italic;
+}
+/*main h1 {
+	font-size: 150%;
+	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	padding-left: 1em;
+	border: 3px double red;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 4px 4px 5px red;
+	}*/
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	margin-left: 1em;
+	border: 1px solid black;
+}
+section h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
+}
+section h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+section p {
+	padding-bottom: .5em;
+}
+section q {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the footer */
+footer p {
+	clear: both;
+	text-align: center;
+	border: 3px solid #931420;
+	background-color: #931420;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
